@@ -1,0 +1,48 @@
+.style-skin{
+  background-color: #F28888;
+  height: 160px;
+
+}
+
+.navbar-default .navbar-nav li a, .navbar-default .navbar-nav li a:active   {
+  color: #ffff;
+}
+
+#about {
+  background: url(../images/nuvem-rosa-claro-final.png) no-repeat top center;
+  padding-bottom: 0px;
+  padding-top: 160px;
+}
+
+
+
+.title-init{
+  font-size: 5rem;
+  line-height: 61px;
+  color: white;
+}
+
+.title-init > span{
+  font-size: 6rem;
+
+}
+
+.img-person{
+  width: 70%;
+}
+
+.about-info{
+  text-align: center;
+}
+
+.botao{
+  text-decoration: none;
+  background-color: rgb(245,95,3);
+  background-image: none;
+  color: rgb(255,255,255);
+  border: 0px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 14px;
+  padding: 12px;
+}
