@@ -2,10 +2,10 @@
 
   "use strict";
 
-    // PRE LOADER
-    $(window).load(function(){
-      $('.preloader').fadeOut(1000); // set duration in brackets    
-    });
+    // // PRE LOADER
+    // $(window).load(function(){
+    //   $('.preloader').fadeOut(1000); // set duration in brackets    
+    // });
 
 
     //Navigation Section
@@ -14,17 +14,6 @@
     });
 
 
-    // Owl Carousel
-    $('.owl-carousel').owlCarousel({
-      animateOut: 'fadeOut',
-      items:1,
-      loop:true,
-      autoplay:true,
-    })
-
-
-    // PARALLAX EFFECT
-    $.stellar();  
 
 
     // SMOOTHSCROLL
@@ -37,9 +26,5 @@
             event.preventDefault();
       });
     });  
-
-
-    // WOW ANIMATION
-    new WOW({ mobile: false }).init();
 
 })(jQuery);
