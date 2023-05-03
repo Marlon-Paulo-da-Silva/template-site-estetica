@@ -93,3 +93,91 @@
     text-align: center;
     font-size: 26px;
 }
+/* accordion */
+#accordion{
+  padding-top: 50px;
+  padding-bottom: 50px;s
+}
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.row {
+  display: flex;
+}
+.row .col {
+  flex: 1;
+}
+.row .col:last-child {
+  margin-left: 1em;
+}
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.tab {
+  width: 100%;
+  color: #40545f;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #f2f2f2;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0rem;
+  border-radius: 6px;
+  transition: border 1s;
+  font-size: 16px;
+ /* Icon */
+}
+.tab-label:hover {
+  color: #00686f;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: -4px;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 16px;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #1a252f;
+}
+.checkbox:checked + .tab-label {
+  background: #f2f2f2;
+  border-radius: 6px 6px 0 0;
+}
+.checkbox:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.checkbox:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+  height: auto;
+  
+}
